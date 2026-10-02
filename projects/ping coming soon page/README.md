@@ -1,109 +1,72 @@
-# Frontend Mentor - Ping coming soon page
+# Ping Coming Soon Page
 
-![Design preview for the Ping coming soon page coding challenge](preview.jpg)
+A responsive coming-soon landing page based on the [Frontend Mentor Ping challenge](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). It presents the Ping brand, a launch announcement, an email subscription form, a dashboard preview, and social links.
 
-## Welcome! 👋
+## Result
 
-Thanks for checking out this front-end coding challenge.
+![Rendered Ping coming soon page](./images/result.png)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Run locally
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+Open `index.html` directly in a browser, or serve this folder with any static web server. The Libre Franklin font is loaded from Google Fonts, so the custom font requires an internet connection; a sans-serif fallback is included.
 
-## The challenge
+## Code structure
 
-Your challenge is to build out this Coming Soon page and get it looking as close to the design as possible.
+### `index.html`
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+The HTML contains the page structure and content:
 
-Your users should be able to:
+1. **Document head** — sets the page title, responsive viewport, description, favicon, Google Font, and stylesheet.
+2. **Announcement (`main.announcement`)** — holds the Ping logo, launch heading, subscription prompt, email form, and dashboard illustration.
+3. **Subscription form (`form.subscribe-form`)** — contains a screen-reader-only label, email input, and submit button. The `required` and `type="email"` attributes enable the browser's built-in validation.
+4. **Footer (`footer.site-footer`)** — contains accessible social links using the local Facebook, Twitter, and Instagram SVG files, plus the copyright line.
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Submit their email address using an `input` field
-- Receive an error message when the `form` is submitted if:
-  - The `input` field is empty. The message for this error should say _"Whoops! It looks like you forgot to add your email"_
-  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Please provide a valid email address"_
+### `style.css`
 
-### Want some support on the challenge? 
+The stylesheet is organized around the page's visual design:
 
-[Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+- CSS custom properties define the challenge's blue, pale blue, gray, and dark-blue palette.
+- Base styles set typography, box sizing, and page spacing.
+- Flexbox centers the page content and lays out the desktop subscription form.
+- The mobile media query stacks the form controls and adjusts spacing and type sizes for narrow screens.
+- Hover and keyboard-focus styles give the button and social links visible interactive states.
+- A reduced-motion media query limits transitions for visitors who prefer less motion.
 
-## Where to find everything
+### Project files
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+```text
+ping coming soon page/
+├── index.html
+├── style.css
+├── README.md
+├── README-template.md
+├── style-guide.md
+├── preview.jpg
+├── design/
+│   ├── desktop-design.jpg
+│   ├── desktop-hover-error-states.jpg
+│   ├── mobile-design.jpg
+│   └── mobile-error-state.jpg
+└── images/
+    ├── logo.svg
+    ├── illustration-dashboard.png
+    ├── favicon-32x32.png
+    ├── facebook-f-brands-solid-full.svg
+    ├── square-twitter-brands-solid-full.svg
+    ├── instagram-brands-solid-full.svg
+    └── result.png
+```
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+The `design/` folder contains the supplied visual references. The `images/` folder contains the page artwork, social icons, favicon, and the rendered result screenshot.
 
-If you would like the Figma design file to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## Form behavior
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+The form checks that an email address is present and formatted like an email address using native browser validation. It is a front-end demo: it does not send or store subscriptions, and the custom error messages shown in the original challenge design are not implemented.
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## Built with
 
-## Using AI coding assistants
-
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
-
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
-
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
-
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
-
-## Building your project
-
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
-
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://www.frontendmentor.io/guides/hosting-your-solution).
-
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://www.frontendmentor.io/guides/how-to-submit-solutions) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community).
-2. Share on [X (formerly Twitter)](https://x.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in your post. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on [LinkedIn](https://www.linkedin.com/company/frontend-mentor/).
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+- Semantic HTML
+- CSS custom properties
+- Flexbox
+- Responsive media queries
+- Accessible labels and focus states

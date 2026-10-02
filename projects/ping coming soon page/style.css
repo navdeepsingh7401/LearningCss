@@ -1,0 +1,237 @@
+:root {
+  font-family: "Libre Franklin", Arial, sans-serif;
+  color: hsl(209, 33%, 12%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --gray: hsl(0, 0%, 59%);
+  --dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 5rem 1.5rem 2rem;
+  text-align: center;
+}
+
+.announcement {
+  display: flex;
+  width: min(100%, 40rem);
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: 5.375rem;
+  height: auto;
+}
+
+h1 {
+  margin: 2.75rem 0 0;
+  color: var(--gray);
+  font-size: clamp(2rem, 4.2vw, 3rem);
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+}
+
+h1 strong {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0.75rem 0 0;
+  font-size: 1.125rem;
+}
+
+.subscribe-form {
+  display: flex;
+  width: 100%;
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.subscribe-form input,
+.subscribe-form button {
+  min-height: 3.5rem;
+  border-radius: 999px;
+  font: inherit;
+}
+
+.subscribe-form input {
+  min-width: 0;
+  flex: 1;
+  padding: 0 1.75rem;
+  border: 1px solid var(--pale-blue);
+  outline: none;
+  color: var(--dark-blue);
+}
+
+.subscribe-form input::placeholder {
+  color: #b9c5d7;
+}
+
+.subscribe-form input:focus-visible {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px hsl(223 87% 63% / 15%);
+}
+
+.subscribe-form button {
+  width: 12.5rem;
+  flex: 0 0 auto;
+  border: 0;
+  background: var(--blue);
+  box-shadow: 0 0.5rem 1rem hsl(223 87% 63% / 25%);
+  color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.subscribe-form button:hover {
+  background: hsl(223, 87%, 68%);
+}
+
+.subscribe-form button:active {
+  transform: translateY(1px);
+}
+
+.subscribe-form button:focus-visible,
+.social-links a:focus-visible {
+  outline: 3px solid hsl(223 87% 63% / 45%);
+  outline-offset: 3px;
+}
+
+.dashboard {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 5.5rem;
+}
+
+.site-footer {
+  margin-top: 4rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.875rem;
+}
+
+.social-links a {
+  display: grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  place-items: center;
+  border: 1px solid #e4eaf2;
+  border-radius: 50%;
+  color: var(--blue);
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.social-links a:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+.social-links img {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  filter: invert(46%) sepia(82%) saturate(1015%) hue-rotate(202deg)
+    brightness(101%) contrast(93%);
+}
+
+.social-links a:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.copyright {
+  margin: 1.5rem 0 0;
+  color: var(--gray);
+  font-size: 0.75rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 5rem 1.75rem 2rem;
+  }
+
+  h1 {
+    margin-top: 2.5rem;
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    letter-spacing: -0.03em;
+  }
+
+  .subtitle {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .subscribe-form {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+    min-height: 3rem;
+  }
+
+  .subscribe-form input {
+    padding: 0 1.75rem;
+    font-size: 0.8rem;
+  }
+
+  .subscribe-form button {
+    font-size: 0.8rem;
+  }
+
+  .dashboard {
+    width: calc(100% + 0.5rem);
+    margin-top: 4.5rem;
+  }
+
+  .site-footer {
+    margin-top: 7rem;
+  }
+
+  .copyright {
+    margin-top: 1.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
