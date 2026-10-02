@@ -13,8 +13,18 @@ This project is a simple CSS learning notebook for basic front-end styling conce
 - Borders
 - Width and height
 - CSS units (`px`, `%`, `em`, `rem`, `vh`, `vw`)
+- Text color and alignment
+- Font family
+- Font size
+- Font weight
+- Line height
+- Letter and word spacing
+- Text decoration
+- Google Fonts / web fonts
 
 ## Lessons
+
+### CSS Basics
 
 - [lessons/CSS Basics/WhatIsCSS.md](lessons/CSS%20Basics/WhatIsCSS.md)
 - [lessons/CSS Basics/cssSyntax.md](lessons/CSS%20Basics/cssSyntax.md)
@@ -25,6 +35,18 @@ This project is a simple CSS learning notebook for basic front-end styling conce
 - [lessons/CSS Basics/borders.md](lessons/CSS%20Basics/borders.md)
 - [lessons/CSS Basics/widthAndHeight.md](lessons/CSS%20Basics/widthAndHeight.md)
 - [lessons/CSS Basics/units.md](lessons/CSS%20Basics/units.md)
+
+### Text & Fonts
+
+- [lessons/Text & Fonts/README.md](lessons/Text%20&%20Fonts/README.md)
+- [lessons/Text & Fonts/textColorAndAlignment.md](lessons/Text%20&%20Fonts/textColorAndAlignment.md)
+- [lessons/Text & Fonts/fontFamily.md](lessons/Text%20&%20Fonts/fontFamily.md)
+- [lessons/Text & Fonts/fontSize.md](lessons/Text%20&%20Fonts/fontSize.md)
+- [lessons/Text & Fonts/fontWeight.md](lessons/Text%20&%20Fonts/fontWeight.md)
+- [lessons/Text & Fonts/lineHeight.md](lessons/Text%20&%20Fonts/lineHeight.md)
+- [lessons/Text & Fonts/letterAndWordSpacing.md](lessons/Text%20&%20Fonts/letterAndWordSpacing.md)
+- [lessons/Text & Fonts/textDecoration.md](lessons/Text%20&%20Fonts/textDecoration.md)
+- [lessons/Text & Fonts/googleFonts.md](lessons/Text%20&%20Fonts/googleFonts.md)
 
 ## Goal
 
