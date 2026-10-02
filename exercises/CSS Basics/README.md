@@ -2,6 +2,12 @@
 
 Build a styled profile page using the concepts from the CSS Basics lessons. Open `index.html` in a browser as you work, and write your reusable styles in `style.css`.
 
+## Rendered output
+
+![Rendered CSS Basics profile page](./assets/Beginner%20CSS%20Profile%20Page%20image%202.png)
+
+![Profile card and project list](./assets/Beginner%20CSS%20Profile%20Page.png)
+
 ## Exercise goals
 
 ### 1. Understand CSS and write valid rules
