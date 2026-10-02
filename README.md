@@ -16,15 +16,15 @@ This project is a simple CSS learning notebook for basic front-end styling conce
 
 ## Lessons
 
-- [lessons/WhatIsCSS.md](lessons/WhatIsCSS.md)
-- [lessons/cssSyntax.md](lessons/cssSyntax.md)
-- [lessons/inlineInternal&ExternalCss.md](lessons/inlineInternal&ExternalCss.md)
-- [lessons/comment&Selector.md](lessons/comment&Selector.md)
-- [lessons/colors.md](lessons/colors.md)
-- [lessons/backgrounds.md](lessons/backgrounds.md)
-- [lessons/borders.md](lessons/borders.md)
-- [lessons/widthAndHeight.md](lessons/widthAndHeight.md)
-- [lessons/units.md](lessons/units.md)
+- [lessons/CSS Basics/WhatIsCSS.md](lessons/CSS%20Basics/WhatIsCSS.md)
+- [lessons/CSS Basics/cssSyntax.md](lessons/CSS%20Basics/cssSyntax.md)
+- [lessons/CSS Basics/inlineInternal&ExternalCss.md](lessons/CSS%20Basics/inlineInternal&ExternalCss.md)
+- [lessons/CSS Basics/comment&Selector.md](lessons/CSS%20Basics/comment&Selector.md)
+- [lessons/CSS Basics/colors.md](lessons/CSS%20Basics/colors.md)
+- [lessons/CSS Basics/backgrounds.md](lessons/CSS%20Basics/backgrounds.md)
+- [lessons/CSS Basics/borders.md](lessons/CSS%20Basics/borders.md)
+- [lessons/CSS Basics/widthAndHeight.md](lessons/CSS%20Basics/widthAndHeight.md)
+- [lessons/CSS Basics/units.md](lessons/CSS%20Basics/units.md)
 
 ## Goal
 
