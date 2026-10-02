@@ -60,7 +60,13 @@ h1 strong {
   display: flex;
   width: 100%;
   margin-top: 2.5rem;
+  align-items: flex-start;
   gap: 1rem;
+}
+
+.email-field {
+  min-width: 0;
+  flex: 1;
 }
 
 .subscribe-form input,
@@ -71,12 +77,16 @@ h1 strong {
 }
 
 .subscribe-form input {
+  width: 100%;
   min-width: 0;
-  flex: 1;
   padding: 0 1.75rem;
   border: 1px solid var(--pale-blue);
   outline: none;
   color: var(--dark-blue);
+}
+
+.subscribe-form input[aria-invalid="true"] {
+  border-color: hsl(354, 100%, 66%);
 }
 
 .subscribe-form input::placeholder {
@@ -113,6 +123,17 @@ h1 strong {
 .social-links a:focus-visible {
   outline: 3px solid hsl(223 87% 63% / 45%);
   outline-offset: 3px;
+}
+
+.form-feedback {
+  margin: 0.45rem 1.75rem 0;
+  color: hsl(354, 100%, 66%);
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.form-feedback--success {
+  color: hsl(209, 33%, 30%);
 }
 
 .dashboard {
@@ -202,6 +223,10 @@ h1 strong {
   .subscribe-form button {
     width: 100%;
     min-height: 3rem;
+  }
+
+  .email-field {
+    width: 100%;
   }
 
   .subscribe-form input {

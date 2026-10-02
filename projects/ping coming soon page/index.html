@@ -29,16 +29,25 @@
       <h1>We are launching <strong>soon!</strong></h1>
       <p class="subtitle">Subscribe and get notified</p>
 
-      <form class="subscribe-form" action="#" method="get">
+      <form class="subscribe-form">
         <label class="visually-hidden" for="email">Your email address</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="Your email address..."
-          autocomplete="email"
-          required
-        />
+        <div class="email-field">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Your email address..."
+            autocomplete="email"
+            aria-describedby="email-feedback"
+            required
+          />
+          <p
+            class="form-feedback"
+            id="email-feedback"
+            aria-live="polite"
+            hidden
+          ></p>
+        </div>
         <button type="submit">Notify Me</button>
       </form>
 
@@ -75,5 +84,6 @@
       </nav>
       <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
     </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>

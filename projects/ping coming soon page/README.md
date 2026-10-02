@@ -18,7 +18,7 @@ The HTML contains the page structure and content:
 
 1. **Document head** — sets the page title, responsive viewport, description, favicon, Google Font, and stylesheet.
 2. **Announcement (`main.announcement`)** — holds the Ping logo, launch heading, subscription prompt, email form, and dashboard illustration.
-3. **Subscription form (`form.subscribe-form`)** — contains a screen-reader-only label, email input, and submit button. The `required` and `type="email"` attributes enable the browser's built-in validation.
+3. **Subscription form (`form.subscribe-form`)** — contains a screen-reader-only label, email input, feedback message, and submit button. JavaScript validates the email and announces helpful messages accessibly.
 4. **Footer (`footer.site-footer`)** — contains accessible social links using the local Facebook, Twitter, and Instagram SVG files, plus the copyright line.
 
 ### `style.css`
@@ -32,12 +32,17 @@ The stylesheet is organized around the page's visual design:
 - Hover and keyboard-focus styles give the button and social links visible interactive states.
 - A reduced-motion media query limits transitions for visitors who prefer less motion.
 
+### `script.js`
+
+The form script trims whitespace, reports the challenge's required error messages for an empty or malformed email, focuses the field after an error, and clears the message as the user edits. Valid email input receives an honest status message because there is no mailing-list service connected to this static page.
+
 ### Project files
 
 ```text
 ping coming soon page/
 ├── index.html
 ├── style.css
+├── script.js
 ├── README.md
 ├── README-template.md
 ├── style-guide.md
@@ -61,7 +66,7 @@ The `design/` folder contains the supplied visual references. The `images/` fold
 
 ## Form behavior
 
-The form checks that an email address is present and formatted like an email address using native browser validation. It is a front-end demo: it does not send or store subscriptions, and the custom error messages shown in the original challenge design are not implemented.
+The form checks for an email address and displays the challenge's messages for an empty field or an incorrectly formatted address. It is a front-end demo: it does not send or store subscriptions because no mailing-list service is connected.
 
 ## Built with
 
@@ -69,4 +74,5 @@ The form checks that an email address is present and formatted like an email add
 - CSS custom properties
 - Flexbox
 - Responsive media queries
+- JavaScript form validation
 - Accessible labels and focus states
