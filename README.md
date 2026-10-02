@@ -48,6 +48,10 @@ This project is a simple CSS learning notebook for basic front-end styling conce
 - [lessons/Text & Fonts/textDecoration.md](lessons/Text%20&%20Fonts/textDecoration.md)
 - [lessons/Text & Fonts/googleFonts.md](lessons/Text%20&%20Fonts/googleFonts.md)
 
+## Exercises
+
+- [CSS Basics Profile Page](exercises/CSS%20Basics/README.md)
+
 ## Goal
 
 The goal of this repository is to understand the basic building blocks of CSS and practice writing clean, readable styling rules.
