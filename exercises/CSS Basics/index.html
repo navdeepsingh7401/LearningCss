@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics Profile Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Internal CSS: styles this page's practice notice. */
+      .notice {
+        display: inline-block;
+        margin: 0;
+        padding: 0.55em 0.9em;
+        color: #164e63;
+        background-color: #cffafe;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <p class="notice">Practice page: style me with internal CSS.</p>
+        <h1 id="page-title">A Little About Me</h1>
+        <p class="intro">
+          Hello! I am learning CSS and building my first styled profile page.
+        </p>
+      </header>
+
+      <section class="profile-card" aria-labelledby="profile-heading">
+        <div class="avatar" aria-label="Avatar placeholder">NS</div>
+        <h2 id="profile-heading">Navdeep Singh</h2>
+        <p class="role">Beginner web developer</p>
+        <p class="bio">
+          I enjoy learning how HTML creates page structure and how CSS makes it
+          look polished.
+        </p>
+        <div class="nested-note">
+          <p>
+            This paragraph is nested inside a div, not a direct child:
+            <span>try styling this span separately.</span>
+          </p>
+        </div>
+        <p class="availability" style="color: #0f766e">
+          Available for projects
+        </p>
+      </section>
+
+      <section class="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Things I Am Practicing</h2>
+        <ul class="project-list">
+          <li>Writing HTML structure</li>
+          <li>Choosing colors and backgrounds</li>
+          <li>Using CSS selectors</li>
+          <li>Building responsive layouts</li>
+        </ul>
+      </section>
+
+      <footer class="page-footer">
+        <p>Keep practicing, one style rule at a time.</p>
+      </footer>
+    </main>
+  </body>
+</html>
